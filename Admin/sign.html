@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Review & Sign Quotation | RS Data Architect Solutions</title>
+    <link rel="stylesheet" href="/css/admin.css">
+    <style>
+        .sign-wrap {
+            max-width: 850px;
+            margin: 36px auto
+        }
+
+        .quote-preview {
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            padding: 22px;
+            margin: 20px 0;
+            background: #fbfcfe
+        }
+
+        .quote-preview h2 {
+            margin-top: 0
+        }
+
+        .line {
+            display: grid;
+            grid-template-columns: 1fr 70px 130px 130px;
+            gap: 8px;
+            padding: 9px 0;
+            border-bottom: 1px solid var(--line);
+            font-size: 13px
+        }
+
+        .line.head {
+            font-weight: 800;
+            color: var(--navy)
+        }
+
+        .sign-canvas {
+            width: 100%;
+            height: 150px;
+            border: 1px dashed #9eafc3;
+            border-radius: 10px;
+            touch-action: none;
+            background: #fff
+        }
+
+        .sign-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end
+        }
+
+        .accept {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+            font-weight: 500
+        }
+
+        .accept input {
+            width: auto;
+            margin: 2px 0
+        }
+
+        .done {
+            padding: 22px;
+            border-radius: 12px;
+            background: #eaf8f0;
+            color: #176c40
+        }
+
+        @media(max-width:600px) {
+            .line {
+                grid-template-columns: 1fr 38px 78px 86px;
+                font-size: 11px
+            }
+
+            .sign-wrap {
+                margin: 18px auto
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shell">
+        <header><a class="brand" href="/"><img src="/assets/rs-approved-logo.png"
+                    alt="RS Data Architect Solutions"><span>RS DATA ARCHITECT<small>CLIENT
+                        QUOTATION</small></span></a><span class="back">Secure document review</span></header>
+        <main class="sign-wrap">
+            <section class="panel">
+                <div class="eyebrow">QUOTATION REVIEW</div>
+                <h1>Review your quotation.</h1>
+                <p>Please review the scope, pricing, and payment terms below. If everything is correct, complete the
+                    signature section to return your acceptance.</p>
+                <div id="quoteContent">Loading quotation…</div>
+                <div id="signArea" hidden>
+                    <h2>Electronic acceptance</h2><label>Full name of authorised signatory<input id="signerName"
+                            autocomplete="name" required></label><label>Draw your signature below</label><canvas
+                        id="signature" class="sign-canvas" width="900" height="220"
+                        aria-label="Signature drawing area"></canvas>
+                    <div class="sign-actions"><button id="clearSig" class="outline" type="button">Clear
+                            signature</button></div><label class="accept"><input id="consent" type="checkbox"><span>I
+                            confirm that I am authorised to sign on behalf of the client and agree to the quotation,
+                            scope, pricing, and payment terms displayed above.</span></label><button id="submitSign"
+                        class="primary" type="button">Sign and return quotation →</button>
+                    <p id="signStatus" class="status" role="status"></p>
+                    <p class="muted">Your signature, name, timestamp, and signing record will be stored with the
+                        executed quotation. Please retain the emailed copy for your records.</p>
+                </div>
+                <div id="completed" hidden class="done"></div>
+            </section>
+        </main>
+        <footer>RS Data Architect Solutions · No. 14 D, C Colony, 8th Street, Perumalpuram, Tirunelveli, Tamil Nadu
+            627007, India</footer>
+    </div>
+    <script src="/js/sign.js" defer></script>
+</body>
+
+</html>

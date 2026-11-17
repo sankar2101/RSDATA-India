@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 74" role="img" aria-labelledby="title desc">
+  <title id="title">RS Data Architect Solutions</title>
+  <desc id="desc">Red and charcoal RS monogram with the company name.</desc>
+  <defs>
+    <linearGradient id="red" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff334c"/><stop offset="1" stop-color="#b80f2d"/></linearGradient>
+  </defs>
+  <g transform="translate(1 7)">
+    <path d="M6 15h25c14 0 22 7 22 18 0 8-4 14-12 17l13 11H33L20 49h-2v12H6V15zm12 11v12h12c5 0 8-2 8-6s-3-6-8-6H18z" fill="url(#red)"/>
+    <path d="M76 15H58v11h17c4 0 6 2 6 5s-2 5-6 5H64c-10 0-16 5-16 14s6 11 16 11h30V50H68c-4 0-6-1-6-4s2-4 6-4h8c11 0 17-5 17-15S86 15 76 15z" fill="#26313a"/>
+    <path d="M6 10C27-3 58-2 76 9" fill="none" stroke="url(#red)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M94 7h8v8h-8zM106 0h7v7h-7zM105 20h6v6h-6z" fill="#ed203b"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-weight="800">
+    <text x="126" y="34" font-size="22" fill="#ed203b" letter-spacing="1.4">RS DATA</text>
+    <text x="126" y="54" font-size="19" fill="#26313a" letter-spacing=".9">ARCHITECT</text>
+    <text x="126" y="68" font-size="9" font-weight="700" fill="#d7203c" letter-spacing="3.1">SOLUTIONS</text>
+  </g>
+</svg>
